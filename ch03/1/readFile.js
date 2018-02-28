@@ -1,5 +1,6 @@
 var fs = require('fs');
-
+/* funcion asincrona que se retorna inmediatamente, antes que el archivo haya sido abierto y
+   se haya invocado a la funcion callback*/
 fs.open('info.txt', 'r', (err, handle) =>
 {
     var buf = new Buffer(100000);    
